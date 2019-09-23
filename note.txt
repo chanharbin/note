@@ -1,0 +1,5 @@
+方法1调用方法2：
+1、方法1有加事务，方法2没加——方法2自动添加到方法1事务当中；
+2、方法1@Transactional(propagation = Propagation.Required)；方法2@Transactional(propagation = Propagation.Required_New)
+方法2与方法1互不影响；
+3、
